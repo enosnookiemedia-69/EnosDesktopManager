@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local application data
+data/
+logs/
+temp/
+tmp/
+
+# Generated indexes and reports
+*.csv
+*_expected*.txt
+photographer_folders_*.txt
+polaroids_to_move.txt
+expected_counts_deferred.txt
+
+# Image files
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.webp
+*.tif
+*.tiff
+*.cr2
+*.cr3
+*.nef
+*.arw
+*.dng
+
+# Video files
+*.mp4
+*.mov
+*.avi
+*.mkv
+
+# Archives
+*.zip
+*.rar
+*.7z
+
+# Local configuration / secrets
+.env
+*.env
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+
