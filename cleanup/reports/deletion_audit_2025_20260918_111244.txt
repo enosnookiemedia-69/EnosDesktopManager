@@ -1,0 +1,46 @@
+==============================================================================
+ ENOS MEDIA MANAGER - DELETION AUDIT REPORT
+==============================================================================
+Year: 2025
+Run:  2026-09-18T11:12:44
+
+READ-ONLY AUDIT: NO FILES WERE DELETED OR MODIFIED.
+
+------------------------------------------------------------------------------
+PHOTOGRAPHER COUNTS
+------------------------------------------------------------------------------
+Photographer                         DB    LOCAL     KEEP   CANDIDATE
+Chrissi                             141      343      141         202
+Dustman                              26       86       26          60
+Fiona                                14       41       14          27
+Flora                                13       37       13          24
+Lara and Chris                       50      174        0         174
+NinaMeana                            48      132       48          84
+Unicorn                              17       32        0          32
+
+------------------------------------------------------------------------------
+TOTALS
+------------------------------------------------------------------------------
+Database records:                 309
+Local image files:                845
+Matched / KEEP:                   242
+Deletion candidates:              603
+Database files missing locally:   67
+Blank database filenames:         0
+Duplicate DB filename groups:     0
+
+------------------------------------------------------------------------------
+SAFETY NOTES
+------------------------------------------------------------------------------
+1. This report is READ-ONLY.
+2. Only the explicitly listed 2025 photographer folders were scanned.
+3. A local file is a candidate only when its filename is absent from
+   the Media Database for the same Year + Photographer.
+4. No RAW/JPG/HEIC substitutions or fuzzy filename matching are used.
+5. Missing database files and duplicate database names must be reviewed
+   before any deletion is considered.
+
+Reports:
+  Candidates: C:\Enos Desktop Manager\Python App\cleanup\reports\deletion_candidates_2025_20260918_111244.csv
+  Kept:       C:\Enos Desktop Manager\Python App\cleanup\reports\deletion_kept_2025_20260918_111244.csv
+  Missing:    C:\Enos Desktop Manager\Python App\cleanup\reports\database_missing_locally_2025_20260918_111244.csv

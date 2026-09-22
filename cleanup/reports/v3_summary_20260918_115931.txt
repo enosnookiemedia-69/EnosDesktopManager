@@ -1,0 +1,52 @@
+==============================================================================
+ ENOS MEDIA MANAGER - DATE-BASED DELETION AUDIT (v3)
+==============================================================================
+Run: 2026-09-18T11:59:31
+Tolerance: 2 second(s)
+READ-ONLY AUDIT: NO FILES WERE DELETED OR MODIFIED.
+
+------------------------------------------------------------------------------
+Photographer        Year     Local    DB   Match  ByName  NoExif  Candidt  DBmiss
+------------------------------------------------------------------------------
+2023                2023         0     1       0       0       0        0       1
+Chrissi             2025       343   141     141       0       3      199       0
+Dustman             2025        86    26      26       0       0       60       0
+Fiona               2025        41    14      14       0       0       27       0
+Flora               2025        37    13      10       0       4       23       3
+Lara and Chris      2025       174    50      50       0       0      124       0
+NinaMeana           2025       132    48      48       0       0       84       0
+Pacome              2025         0   196       0       0       0        0     196
+Photos B80          2025         0   158       0       0       0        0     158
+Unicorn             2025        32    17      17       0       0       15       0
+DD                  2026       185    47      47       0       0      138       0
+Dani                2026        72     5       5       0       0       67       0
+Dine                2026        41    24      24       0       0       17       0
+Dustman             2026        18    17      17       0       0        1       0
+Jason               2026      1014    50      46       0     295      673       4
+Mo                  2026       109    50      31       0      33       45      19
+Nina                2026       161    38      38       0       0      123       0
+Pacome              2026      1207   205     205       0       0     1002       0
+Peter               2026       111    26      26       0       0       85       0
+Polaroids           2026        28    28      28       0       0        0       0
+Sam                 2026        26    12      12       0       0       14       0
+Sla                 2026        49     3       3       0       0       46       0
+Thomas              2026       280    46      46       0       0      234       0
+Unicorn             2026       286    50      50       0       0      236       0
+------------------------------------------------------------------------------
+TOTAL                         4432  1265     884       0     335     3213     381
+
+Columns: Local=local original files, DB=Media Database rows,
+Match=matched by Date Taken or filename fallback (KEEP), ByName=of Match,
+how many were rescued by the filename fallback specifically (date
+disagreed - worth spot-checking), NoExif=no reliable EXIF date (KEEP),
+Candidt=no matching DB record by date or filename (deletion candidate),
+DBmiss=DB rows with no matching local file (needs manual review, NOT a
+delete signal).
+
+Candidates CSV: C:\Enos Desktop Manager\Python App\cleanup\reports\v3_deletion_candidates_20260918_115931.csv
+Kept CSV:       C:\Enos Desktop Manager\Python App\cleanup\reports\v3_kept_20260918_115931.csv
+DB-not-found:   C:\Enos Desktop Manager\Python App\cleanup\reports\v3_db_not_found_locally_20260918_115931.csv
+
+NEXT STEP: review the candidates CSV before deleting anything.
+This script does not delete files - a separate, explicitly
+confirmed deletion step would be needed after review.
