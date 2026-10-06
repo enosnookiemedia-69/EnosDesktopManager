@@ -1,0 +1,112 @@
+==============================================================================
+ENOS MEDIA MANAGER - FULL DATABASE RECONCILIATION
+==============================================================================
+
+READ-ONLY — NO FILES WERE MODIFIED OR DELETED
+
+SOURCE FILES
+------------------------------------------------------------------------------
+Media Database:
+  C:\Enos Desktop Manager\Python App\data\Enos_Media_Manager_v1 - Media Database (1).csv
+
+Original Image Index:
+  C:\Enos Desktop Manager\Python App\original_image_index.csv
+
+OVERALL TOTALS
+------------------------------------------------------------------------------
+Media Database records:       1,265
+Unique DB exact identities:   1,265
+Local indexed originals:      6,270
+Matched:                      1,264
+Uncertain / protected:        310
+DEFINITE NON-DB:              4,696
+DB records not found locally: 1
+
+MATCH TYPES
+------------------------------------------------------------------------------
+EXACT_FILENAME                   801
+DATE_TAKEN                       305
+FILENAME_FALLBACK                  0
+FILENAME_STEM                    158
+NO_RELIABLE_EXIF                 310
+AMBIGUOUS_DATE                     0
+AMBIGUOUS_FILENAME_STEM            0
+NO_MATCH                       4,696
+
+THREE-WAY LOCAL / DATABASE / PIXIESET SUMMARY
+------------------------------------------------------------------------------
+YEAR   PHOTOGRAPHER             LOCAL     DB  PIXIESET  DB-PIX LOC-PIX  MATCHED   UNCERT   NON-DB
+------------------------------------------------------------------------------
+2023   2023                         0      1   UNKNOWN                        0        0        0
+2025   b80                        158    158       158      +0      +0      158        0        0
+2025   chrissi                    343    141       141      +0    +202      141        3      199
+2025   dustman                     86     26        26      +0     +60       26        0       60
+2025   fiona                       41     14        14      +0     +27       14        0       27
+2025   flora                       37     13        13      +0     +24       13        1       23
+2025   lara and chris             174     50        72     -22    +102       50        0      124
+2025   ninameana                  132     48        48      +0     +84       48        0       84
+2025   pacome                   1,680    196       196      +0  +1,484      196        1    1,483
+2025   unicorn                     32     17        17      +0     +15       17        0       15
+2026   dani                        72      5        25     -20     +47        5        0       67
+2026   dd                         185     47        47      +0    +138       47        0      138
+2026   diana                        0      0        24     -24     -24        0        0        0
+2026   dine                        41     24   UNKNOWN                       24        0       17
+2026   dustman                     18     17        17      +0      +1       17        0        1
+2026   jason                    1,014     50       143     -93    +871       50      291      673
+2026   mo                         109     50        50      +0     +59       50       14       45
+2026   nina                       161     38        38      +0    +123       38        0      123
+2026   pacome                   1,207    205       203      +2  +1,004      205        0    1,002
+2026   peter                      111     26        26      +0     +85       26        0       85
+2026   polaroids                   28     28        28      +0      +0       28        0        0
+2026   sam                         26     12        12      +0     +14       12        0       14
+2026   sla                         49      3        13     -10     +36        3        0       46
+2026   thomas                     280     46        46      +0    +234       46        0      234
+2026   unicorn                    286     50        54      -4    +232       50        0      236
+
+THREE-WAY STATUS
+------------------------------------------------------------------------------
+ALL_THREE_COUNTS_MATCH                  2
+COUNTS_DIFFER                           7
+DB_MATCHES_PIXIESET                    14
+PIXIESET_UNKNOWN                        2
+
+PIXIESET INTERPRETATION
+------------------------------------------------------------------------------
+Pixieset totals are reference counts only.
+They are NOT used to classify individual files.
+They are NOT used as deletion authority.
+
+A DB count matching a Pixieset count does NOT prove that every local non-DB file can be deleted.
+A local count differing from Pixieset does NOT prove that the additional local files are unwanted.
+
+PHOTOGRAPHER NAME ALIASES
+------------------------------------------------------------------------------
+herman  ->  unicorn
+phil dustman  ->  dustman
+photos b80  ->  b80
+
+IMPORTANT 2025 B80 NOTE
+------------------------------------------------------------------------------
+Local 2025 b80:          158
+Media DB 2025 photos b80: 158
+Pixieset B80:             158
+
+These matching counts indicate a photographer-name difference rather than evidence that the 158 local B80 files are non-DB.
+The alias is therefore handled before matching.
+
+DEFINITION OF DEFINITE NON-DB
+------------------------------------------------------------------------------
+A local image is classified as DEFINITE_NON_DB only when the approved matching methods found no relationship to an unused Media Database record.
+Pixieset totals do not override this classification.
+
+The script does NOT delete these files.
+They require review before any future deletion operation.
+
+SAFETY
+------------------------------------------------------------------------------
+No image files were opened for writing.
+No image files were moved.
+No image files were renamed.
+No image files were deleted.
+No Media Database records were modified.
+No original index records were modified.
